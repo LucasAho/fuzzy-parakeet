@@ -4,9 +4,7 @@ import "./style.css";
 function BeastCard(props) {
   return (
     <div className="beast-card">
-      
-        <img alt={props.name} src={props.image} />
-
+        <img src={props.image} />
     </div>
   );
 }
