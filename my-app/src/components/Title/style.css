@@ -1,0 +1,15 @@
+.title-container {
+  display: flex;
+  width: 100%;
+  font-size: 2rem;
+  color: #2A77AE;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  float: left;
+}
+.title-text {
+  font-size: 1.75rem;
+}
