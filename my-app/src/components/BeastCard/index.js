@@ -1,15 +1,13 @@
-import React from "react";
+import React  from "react";
 import "./style.css";
 
 function BeastCard(props) {
-  return (
-    <div className="beast-card">
-        <img src={props.image} />
-    </div>
-  );
-}
-// handleClick = event => {
-//   const { nam}
-// }
+
+    return(
+      <button className="beast-card" onClick={props.handleClick}>
+        <img alt={props.name} src={props.image} />
+      </button>
+    );
+  }
 
 export default BeastCard;

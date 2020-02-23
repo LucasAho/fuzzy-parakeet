@@ -3,60 +3,72 @@
         "id": 1,
         "name": "Beholder",
         "image": "https://5e.tools/img/MM/Beholder.png?v=1.97.1"
+        
     },
     {
         "id": 2,
         "name": "Red Dragon",
         "image": "https://5e.tools/img/MM/Adult%20Red%20Dragon.png?v=1.97.1"
+        
     },
     {
         "id": 3,
         "name": "Dryad",
         "image": "https://5e.tools/img/MM/Dryad.png?v=1.97.1"
+        
     },
     {
         "id": 4,
         "name": "Goblin",
         "image": "https://5e.tools/img/MM/Goblin.png?v=1.97.1"
+        
     },
     {
         "id": 5,
         "name": "Hag",
         "image": "https://5e.tools/img/VGM/Annis%20Hag.png?v=1.97.1"
+        
     },
     {
         "id": 6,
         "name": "Kraken",
         "image": "https://5e.tools/img/MM/Kraken.png?v=1.97.1"
+        
     },
     {
         "id": 7,
         "name": "Lich",
         "image": "https://5e.tools/img/MM/Lich.png?v=1.97.1"
+        
     },
     {
         "id": 8,
         "name": "Mind Flayer",
         "image": "https://5e.tools/img/MM/Mind%20Flayer.png?v=1.97.1"
+        
     },
     {
         "id": 9,
         "name": "Myconid Sovereign",
         "image": "https://5e.tools/img/MM/Myconid%20Sovereign.png?v=1.97.1"
+        
     },
     {
         "id": 10,
         "name": "Orc",
         "image": "https://5e.tools/img/MM/Orc.png?v=1.97.1"
+        
     },
     {
         "id": 11,
         "name": "OwlBear",
         "image": "https://5e.tools/img/MM/Owlbear.png?v=1.97.1"
+        
     },
     {
         "id": 12,
         "name": "Satyr",
         "image": "https://5e.tools/img/MM/Satyr.png?v=1.97.1"
+        
     }
 ]
