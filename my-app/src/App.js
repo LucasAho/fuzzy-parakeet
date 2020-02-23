@@ -10,7 +10,7 @@ class App extends Component {
     beasts: beasts,
     pickedBeasts: [],
     topScore: 0,
-    alertMessage: ""
+    currentScore: 0
   };
 
   handleClick = event => {
@@ -36,14 +36,12 @@ class App extends Component {
   checkGuess = (name, cb) => {
     const newState = { ...this.state };
     if (newState.pickedBeasts.includes(name)) {
-
-      newState.alertMessage = `YOU ALREADY PICKED "${name}"!`;
+      newState.currentScore = 0;
       newState.pickedBeasts = [];
       this.setState(this.state = newState);
     } else {
       newState.pickedBeasts.push(name);
-      console.log(newState.pickedBeasts)
-      newState.alertMessage = `GOOD CHOICE`
+      newState.currentScore++;
       this.setState(this.state = newState)
     }
     cb(newState, this.alertWinner);
@@ -59,7 +57,6 @@ class App extends Component {
 
   alertWinner = (newState) => {
     if (newState.pickedBeasts.length === 12) {
-      newState.alertMessage = "CHAMPION!";
       newState.pickedBeasts = [];
       this.setState(this.state = newState)
     }
@@ -68,7 +65,9 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Memory Game</Title>
+        <Title 
+        currentScore={this.state.currentScore}
+        topScore={this.state.topScore}>Memory Game</Title>
         {this.state.beasts.map(beast => (
           <BeastCard
             id={beast.id}
