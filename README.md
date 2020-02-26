@@ -1,23 +1,16 @@
 # fuzzy-parakeet
-This assignment will use React to break up the application's UI into components, manage component state, and respond to user events.
+This assignment uses React to break up the application's UI into components, manage component state, and respond to user events. These functions combine to create a memory game, increasing a player's score every time they click a unique image and shuffling the order of the cards. If the player clicks a card they've already clicked, their score will drop to 0 while the top score remains at that users highscore.
 
-### Instructions
+# File Infrastructure
 
-1. Check out the [example solution](https://clicky-game.netlify.com/) and study the app's basic functionality.
+* My-app: This folder holds the react app created for this assignment, and all files for the app act withing this folder.
 
-2. Create a new React application using [Create React App](https://github.com/facebookincubator/create-react-app).
+## Src
+* App.js: holds game functions and sends props to components used in the creation and use of game. 
+* bestiary.json: JSON array holds the 12 images and names used for the game
+* index.js: Renders the reactDOM for app.
 
-3. The application should render different images (of your choice) to the screen. Each image should listen for click events.
-
-4. The application should keep track of the user's score. The user's score should be incremented when clicking an image for the first time. The user's score should be reset to 0 if they click the same image more than once.
-
-5. Every time an image is clicked, the images rendered to the page should shuffle themselves in a random order.
-
-6. Once the user's score is reset after an incorrect guess, the game should restart.
-
-7. When complete, the application should be deployed to Github Pages. See the README generated with Create React App for instructions on deploying the application to Github Pages.
-
-
-#### Hints
-
-* Begin by building a non-functioning static version for your Clicky Game. Then work on making the game interactive.
+### Components
+* BeastCard: Component used for each object in the bestiary.json
+* Title: Holds scoreboard and website header
+* Wrapper: Gives background color and container to the nested beastcard components
